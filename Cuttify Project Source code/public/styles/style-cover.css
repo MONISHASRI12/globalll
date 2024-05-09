@@ -1,0 +1,296 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+header {
+    background-color: rgb(240, 111, 13);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 10px;
+    margin: 10px auto;
+    border: rgb(175, 172, 172) 1px solid;
+    background-color: white;
+    border-radius: 50px;
+    height: 30px;
+    width: 500px;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+
+.icon {
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(240, 111, 13);
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px gainsboro;
+}
+
+.icon:hover {
+    box-shadow: 15px 15px 80px rgb(179, 178, 178);
+}
+
+.icon img {
+    height: 220px;
+}
+
+.carousel {
+    margin-top: 5px;
+    width: 100%;
+    height: 500px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    left: 0px;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item:first-child {
+    opacity: 1;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+#li {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0px 0px 0px 20px;
+    font-size: 30px;
+    border: rgb(236, 163, 29) 3px solid;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+
+}
+
+nav li a:hover {
+    background-color: orange;
+    color: white;
+}
+
+#li:hover {
+    background-color: orange;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.card {
+
+    margin: 30px 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 100px;
+    color: black;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.card-rating i {
+    color: #ffc107;
+    margin-right: 5px;
+}
+
+.card-rating span {
+    margin-left: 5px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.card-location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.card-location i {
+    color: orange;
+    margin-right: 5px;
+}
+
+.card-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.card-actions button i {
+    color: #333;
+    transition: transform 0.2s;
+}
+
+.card-actions button i:first-child {
+    display: none;
+}
+
+.card-actions button i:last-child {
+    display: block;
+}
+
+.card-actions button:focus i:first-child,
+.card-actions button:active i:first-child {
+    display: block;
+}
+
+.card-actions button:focus i:last-child,
+.card-actions button:active i:last-child {
+    display: none;
+}
+
+.card-actions button:focus,
+.card-actions button:active {
+    color: #007bff;
+}
+
+.card-actions button:focus:not(:first-child),
+.card-actions button:active:not(:first-child) {
+    color: #333;
+}
+
+.save-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.save-btn i {
+    color: #333;
+    transition: transform 0.2s;
+}
+
+.save-btn i:first-child {
+    display: block;
+}
+
+.save-btn i:last-child {
+    display: none;
+}
+
+.save-btn:focus i:first-child,
+.save-btn:active i:first-child {
+    display: none;
+}
+
+.save-btn:focus i:last-child,
+.save-btn:active i:last-child {
+    display: block;
+}
+
+.save-btn:focus,
+.save-btn:active {
+    color: #007bff;
+}
+
+.save-btn:focus:not(:last-child),
+.save-btn:active:not(:last-child) {
+    color: #333;
+}
+
+.home-button {
+    background-color: rgb(240, 111, 13);
+
+    border: rgb(240, 111, 13) 1px;
+}

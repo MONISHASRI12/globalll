@@ -1,0 +1,37 @@
+/* Chat container styles */
+.chat-container {
+    background-color: #ffffff; /* White */
+    color: #d79909; /* Mustard Yellow */
+}
+
+/* Chat header styles */
+.chat-header {
+    background-color: #d79909; /* Mustard Yellow */
+    color: #ffffff; /* White */
+}
+
+.chat-header h2 {
+    color: #ffffff; /* White */
+}
+
+/* Chat message list styles */
+.chat-message-list {
+    background-color: #ffffff; /* White */
+    color: ; /* Mustard Yellow */
+}
+
+/* Chat input styles */
+.chat-input {
+    background-color: #ffffff; /* White */
+    color: #d79909; /* Mustard Yellow */
+}
+
+.chat-input input {
+    color: #d79909; /* Mustard Yellow */
+    border-color: #d79909; /* Mustard Yellow */
+}
+
+.chat-input button {
+    background-color: #d79909; /* Mustard Yellow */
+    color: #ffffff; /* White */
+}

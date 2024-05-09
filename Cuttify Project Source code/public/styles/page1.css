@@ -1,0 +1,38 @@
+/* Header styles */
+.header {
+    background-color: #d79909; /* Mustard Yellow */
+    color: #ffffff; /* White */
+}
+
+.header h2 {
+    color: #ffffff; /* White */
+}
+
+.nav-pills .nav-link.active {
+    color: #ffffff; /* White */
+    background-color: #d79909; /* Mustard Yellow */
+}
+
+/* Chat item styles */
+.chat-item {
+    background-color: #ffffff; /* White */
+    color: #d79909; /* Mustard Yellow */
+}
+
+.chat-item div:first-child {
+    font-weight: bold;
+}
+
+.chat-item div:last-child {
+    color: #6c757d; /* Slightly darker shade */
+}
+
+/* Navigation link styles */
+.nav-link {
+    color: #d79909; /* Mustard Yellow */
+}
+
+.nav-link.active {
+    color: #ffffff; /* White */
+    background-color: #d79909; /* Mustard Yellow */
+}

@@ -1,0 +1,12 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.booking-card {
+    max-width: 400px;
+    margin: auto;
+}
+
+.booking {
+    border-bottom: 1px solid #ddd;
+}
